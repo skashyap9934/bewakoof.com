@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@200;300&family=Raleway:wght@600&display=swap");
+
+body {
+  min-height: 100vh;
+}
+
+.login-body {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  bottom: 0;
+  top: 13%;
+}
+
+.login-body > div {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.login-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: url("https://images.bewakoof.com/web/group-19-1617704502.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.login-left > h1 {
+  font-size: 40px;
+  position: absolute;
+  font-family: serif;
+  word-spacing: 5px;
+  font-weight: bolder;
+  top: -4%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.login-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-right > h3,
+.login-right > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.login-right > p {
+  margin-block: 11px;
+  color: grey;
+  font-size: 21px;
+}
+
+.login-right > form {
+  position: relative;
+  width: 50%;
+  margin-top: 11px;
+  padding-bottom: 11px;
+}
+
+.country {
+  position: relative;
+}
+
+.country > div {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  left: 15px;
+  padding: 3px;
+  background-color: rgb(185, 178, 178);
+  font-family: "Montserrat", sans-serif;
+  top: 25%;
+  color: white;
+}
+
+.country img {
+  width: 21px;
+}
+
+.login-right input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 21px 25px 21px 55px;
+  margin-bottom: 11px;
+  background-color: rgb(6, 118, 118);
+  color: black;
+  font-weight: bolder;
+  font-size: 17px;
+  border-radius: 11px;
+  border: none;
+  outline: none;
+}
+
+.login-right > form > input:last-child {
+  color: white;
+}
+
+.login-right > form > input:first-child:hover {
+    cursor: default;
+}
+
+.login-right input::placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  padding-left: 2px;
+}
+
+#mobile {
+  background-color: whitesmoke;
+  padding-left: 20%;
+}
+
+#rule {
+    width: 60%;
+}
+
+.same {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-right input:hover {
+    cursor: pointer;
+}
+
+#mobile:hover {
+    cursor: text;
+}
+
+#name:hover {
+    cursor: text;
+}
+
+#name {
+    background-color: whitesmoke;
+    padding-left: 21px;
+}
+
+.bottom-buttons {
+    width: 50%;
+    margin-top: 21px;
+}
+
+.bottom-buttons input {
+    padding: 15px 50px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    background: transparent;
+    color: black;
+    border: 1px solid grey;
+}
+
+.same > i {
+    font-size: 17px;
+    color: red;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+.same:first-child > i {
+    left: 22%;
+}
+
+.same:nth-child(2) > i {
+    left: 36%;
+}
+
+.same:last-child > i {
+    left: 33%;
+}
+
+#terms {
+    font-size: 11px;
+    width: 50%;
+    text-align: justify;
+}
+
+#terms > span {
+    color: rgb(6, 115, 115);
+}
+
+#terms > span:hover {
+    cursor: pointer;
+}
+
+.alertPop {
+    position: absolute;
+    box-shadow: rgba(15, 1, 1, 0.35) 0px 5px 15px;
+    border-radius: 11px;
+    padding: 51px 51px;
+    border: 1px solid grey;
+    display: none;
+    top: 30%;
+    left: 22%;
+    width: 50%;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;    
+    background: linear-gradient(rgb(250, 250, 248), rgb(245, 245, 243));
+    animation-name: pop-up;
+    animation-duration: .3s;
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0%;
+  } 25% {
+    opacity: 25%;
+  } 50% {
+    opacity: 50%;
+  } 75% {
+    opacity: 75%;
+  } 100% {
+    opacity: 100%;
+  }  
+}
+
+.alertPop > h2 {
+    color: red;
+}
+
+.alertPop > a {
+    text-decoration: none;
+    background-color: rgb(9, 114, 114);
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    padding: 17px;
+    border-radius: 100%;
+}
+
+.alertPop > a:hover {
+    cursor: pointer;
+    background-color: rgb(13, 149, 149);
+}

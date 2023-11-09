@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200;300&family=Raleway:wght@600&display=swap");
+
+#grid {
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.appended-data {
+    background: url('https://th.bing.com/th/id/OIP.-Wm7JWQpanWVRY7A6LqycwHaE7?w=297&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#grid > div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding-bottom: 23%;
+    position: relative;
+}
+
+#grid > div > img {
+    width: 100%;
+    text-align: center;
+}
+
+#grid > div > p, #grid > div > h3 {
+    margin-inline: 21px;
+    text-align: justify;
+}
+
+#grid > div > h3 {
+    position: absolute;
+    bottom: 8%;
+}
+
+button {
+    width: fit-content;
+    padding: 11px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #00308F;
+    color: white;
+    font-family: serif;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #021f59;
+}
+
+#grid > div > div {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pages {
+    display: none;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    padding-bottom: 25px;
+}
+
+.filter-button {
+    display: none;
+}
+
+.filter-button > form {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: red;
+}
+
+.filter-button > p {
+    border-top: 1px solid grey;
+    padding-top: 15px;
+}
+
+.option {
+    margin-right: 15px;
+}
+
+select {
+    font-size: 17px;
+}
+
+select > option {
+    font-size: 17px;
+}
+

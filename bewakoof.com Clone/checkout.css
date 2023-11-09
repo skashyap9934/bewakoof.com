@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#payments {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  display: none;
+  margin: auto;
+}
+
+#payments > form {
+  padding: 5px 51px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#payments > form > h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#payments > form input {
+  border: 1px solid black;
+  padding: 11px 15px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 21px;
+}
+
+.detail-data {
+  display: flex;
+  margin: auto;
+}
+
+.detail-data > div {
+  margin-right: 51px;
+  width: 50%;
+}
+
+#card-number {
+  width: 92.5%;
+}
+
+#payments #confirm,
+#address #add-add {
+  background-color: rgb(7, 76, 76);
+  color: white;
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#payments #confirm:hover,
+#address #add-add:hover {
+  cursor: pointer;
+  background-color: rgb(14, 122, 122);
+}
+
+.detail-data > img {
+  width: 30%;
+  margin-left: 4.5%;
+}
+
+.exp-det {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+#address > form {
+  width: 65%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 21px;
+}
+
+#address > form > input {
+  padding: 11px 15px;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid black;
+  margin-right: 22px;
+}
+
+#address > p {
+  margin-bottom: 11px;
+}
+
+span {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#done {
+  display: none;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 21px;
+  width: fit-content;
+  border: 2px solid red;
+  padding: 21px;
+  background-color: rgb(10, 100, 100);
+  border-radius: 5px;
+  border: none;
+}
+
+#done > button {
+  font-size: 21px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+#done:hover {
+  background-color: rgb(8, 131, 131);
+}
+
+#done > button:hover {
+  cursor: pointer;
+}
